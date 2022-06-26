@@ -30,7 +30,7 @@ bindkey -- "^[[1;3C" forward-word #alt-right
 #shows hidden directory on tab selection
 setopt globdots
 
-#terminal escap sequences
+#terminal escape sequences
 autoload -Uz add-zsh-hook
 function reset_broken_terminal() {
 	printf '%b' '\e[0m\e(B\e)0\017\e[?5l\e7\e[0;0r\e8'
